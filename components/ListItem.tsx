@@ -5,11 +5,12 @@ type Props = {
   imageUrl: string;
   title: string;
   author: string;
+  onPress: () => void;
 };
 
-export const ListItem = ({ imageUrl, title, author }: Props) => {
+export const ListItem = ({ imageUrl, title, author, onPress }: Props) => {
   return (
-    <TouchableOpacity style={styles.itemContainer}>
+    <TouchableOpacity style={styles.itemContainer} onPress={onPress}>
       <View style={styles.leftContainer}>
         {!!imageUrl && (
           <Image style={styles.image} source={{ uri: imageUrl }} />
