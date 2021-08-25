@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, FlatList, SafeAreaView } from "react-native";
 import axios from "axios";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
 
 import { ListItem } from "../components/ListItem";
 import Constants from "expo-constants";
