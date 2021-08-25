@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, SafeAreaView } from "react-native";
+import { StyleSheet, SafeAreaView, TouchableOpacity, Text } from "react-native";
 import { WebView } from "react-native-webview";
 // import { StackNavigationProp } from "@react-navigation/stack";
 // import { RootStackParamList } from "../types/navigation";
@@ -14,6 +14,12 @@ export const ArticleScreen = ({ route }: any) => {
   const { article } = route.params;
   return (
     <SafeAreaView style={styles.container}>
+      <TouchableOpacity onPress={() => alert("ff")}>
+        <Text>ADD_CLIP</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => alert("ff")}>
+        <Text>DELETE_LIP</Text>
+      </TouchableOpacity>
       <WebView source={{ uri: article.url }} />
     </SafeAreaView>
   );
