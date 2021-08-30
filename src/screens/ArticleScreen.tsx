@@ -1,6 +1,8 @@
 import React from "react";
 import { StyleSheet, SafeAreaView, TouchableOpacity, Text } from "react-native";
 import { WebView } from "react-native-webview";
+import { useDispatch } from "react-redux";
+
 // import { StackNavigationProp } from "@react-navigation/stack";
 // import { RootStackParamList } from "../types/navigation";
 // import { RouteProp } from "@react-navigation/native";
